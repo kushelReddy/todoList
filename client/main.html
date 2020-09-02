@@ -1,0 +1,25 @@
+<head>
+  <title>todo2</title>
+</head>
+
+<body>
+  {{> todoList}}
+</body>
+
+
+<template id="" name="todoList">
+  <h1>Todo list</h1>
+  <form id="todoForm">
+    <input class="lable" type="text" name="lable" value="" placeholder="New Todo">
+    <button class="" type="submit" name="submit">Add todo</button>
+  </form>
+  {{#each todos}}
+  {{> todo}}
+  {{/each}}
+</template>
+
+
+<template id="" name="todo">
+  <p><input type="checkbox" name="" value="">{{lable}}<button class="delete" type="submit" name="deleteButton">X</button></p>
+
+</template>
